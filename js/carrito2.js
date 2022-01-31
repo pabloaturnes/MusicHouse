@@ -1,4 +1,4 @@
-export default function carrito(){
+export default function carrito2(){
 
     let $carritoIcon = document.querySelector(".carrito-div");
     let $carritoContainer = document.querySelector(".carrito");

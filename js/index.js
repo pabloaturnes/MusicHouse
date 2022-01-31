@@ -1,6 +1,6 @@
-import carrito2 from "carrito2.js";
-import menuMobile from "menuMobile.js";
-import scrollSpy from "scrollSpy.js";
+import carrito2 from "./carrito2.js";
+import menuMobile from "./menuMobile.js";
+import scrollSpy from "./scrollSpy.js";
 
 
 
