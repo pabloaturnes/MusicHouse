@@ -173,9 +173,11 @@ export default function table(){
     // si no hay productos cargados el array carrito estara vacio, sino sera igual a lo cargado en localStorage
     if(localStorage.getItem("rockHouse" == null)){
         var carrito = [];
+        console.log("carrito esta vacio: ", carrito);
     }else{
         var carrito = localStorage.getItem("rockHouse");
         carrito = JSON.parse(carrito);
+        console.log("carrito viene con algo: ",carrito)
     }
 
     mostrarTodos();
@@ -375,13 +377,7 @@ export default function table(){
 
         let $carritoNumber = document.querySelector(".number p")
 
-        if(carrito == null){
-            $carritoNumber.innerHTML = 0;
-        }else{
-            $carritoNumber.innerHTML = carrito.length;
-        }
-
-        
+        $carritoNumber.innerHTML = carrito.length;
 
     }
 
