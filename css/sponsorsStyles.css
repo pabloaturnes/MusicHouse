@@ -1,0 +1,310 @@
+html{
+    box-sizing: border-box;
+    font-size: 15px;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+/* INTRO STYLES*/
+.intro{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color:   black;;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    position: fixed;
+    top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255,0.5);
+    width: 50rem;
+    color: black;
+    padding: 0 1.5rem 0 0;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+}
+
+header:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255,1);
+    box-shadow: 0px 0px 16px 7px rgba(255,255,255,0.5);
+}
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+    display: flex;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header li{
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: 400;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+ul a:hover{
+    letter-spacing: 0.2rem;
+    color: #CC0C0C;
+}
+
+ul a:before{
+    content: " ";
+    background-color: #CC0C0C;
+    width: 0;
+    height: 0.5rem;
+    position: absolute;
+    bottom: -0.5rem;
+    transition: all 0.4s ease-in-out;
+}
+ul a:hover:before{
+    width: 100%;
+}
+
+.hamburguer{
+    display: none;
+}
+
+/* lOGO CARRITO STYLES*/
+.carrito-div{
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.carrito-div i{
+    font-size: 2rem;
+    z-index: 100;
+    transition: all 0.3s ease-in;
+}
+
+.carrito-div i:hover{
+color: #CC0C0C;
+}
+
+.number{
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #CC0C0C;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    top: -0.7rem;
+    right: -0.4rem;
+}
+
+
+
+/* CARRITO STYLES  */
+
+.carrito{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    min-height: 15rem;
+    width: 30rem;
+    background-color: #CC0C0C;
+    position: fixed;
+    right: 0;
+    top: 12rem;
+    width: 0;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 1rem 0;
+    gap: 1rem;
+    z-index: 150;
+}
+
+.carrito table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.carrito tr{
+    height: 3rem;
+}
+
+
+.carrito .row{
+    height: 3rem;
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+}
+
+.carrito .row:hover{
+    background-color: red
+}
+
+.carrito button{
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.carrito-active{
+    width: 30rem;
+}
+
+
+
+/* CONTAINER STYLES */
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+
+.container .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 12.5rem 0 3rem 0;
+}
+
+.card{
+    background-color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+img{
+    width: 8rem;
+    height: 8rem;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:749px){
+
+    header{
+        width: 15rem;
+        padding: 0;
+        margin: 0 auto; /* Will not center vertically and won't work in IE6/7. */
+        left: 0;
+        right: 0;
+    }
+
+    header ul{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        background-color: white;
+        width: 100vw;
+        height: 0;
+        color: #CC0C0C;
+        top: 30vh;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-active{
+        height: 70vh;
+    }
+
+
+    ul a{
+  
+        font-size: 1.5rem;
+  
+    }
+
+    .hamburguer{
+        display: flex;
+        color: white;
+        font-size: 5rem;
+    }
+
+    .carrito{
+        top: 30vh;
+    }
+
+    .carrito-active{
+        width: 100vw;
+        height: 70vh;
+    }
+
+}
+
+
+
+@media (min-width:749px) and (max-width:1024px){
+
+    .card{
+        width: 9rem;
+        height: 9rem;
+    }
+
+}
+
+@media (max-width: 748px){
+
+
+
+    .card{
+        width: 9rem;
+        height: 9rem;
+    }
+
+}
