@@ -375,7 +375,13 @@ export default function table(){
 
         let $carritoNumber = document.querySelector(".number p")
 
-        $carritoNumber.innerHTML = carrito.length;
+        if(carrito.length == null){
+            $carritoNumber.innerHTML = 0;
+        }else{
+            $carritoNumber.innerHTML = carrito.length;
+        }
+
+        
 
     }
 
