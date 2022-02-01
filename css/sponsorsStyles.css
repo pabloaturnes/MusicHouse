@@ -188,7 +188,10 @@ color: #CC0C0C;
 
 .carrito-active{
     width: 30rem;
+    overflow: auto;
+    padding: 0 1rem 1rem 1rem;
 }
+
 
 
 
@@ -283,6 +286,7 @@ img{
     .carrito-active{
         width: 100vw;
         height: 70vh;
+        padding: 0 1rem 1rem 1rem;
     }
 
 }

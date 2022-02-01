@@ -88,6 +88,7 @@ ul a:before{
     bottom: -0.5rem;
     transition: all 0.4s ease-in-out;
 }
+
 ul a:hover:before{
     width: 100%;
 }
@@ -188,7 +189,10 @@ color: #CC0C0C;
 
 .carrito-active{
     width: 30rem;
+    overflow: auto;
+    padding: 0 1rem 1rem 1rem;
 }
+
 
 
 /* EVENTS STYLES */
@@ -282,6 +286,10 @@ h2{
     transition: all 0.4s ease-in-out;
 }
 
+.card-footer a:hover{
+    letter-spacing: 0.3rem;
+}
+
 
 .joao{
     background-image: url("/imagenes/joao.png");
@@ -371,6 +379,7 @@ h2{
     .carrito-active{
         width: 100vw;
         height: 70vh;
+        padding: 0 1rem 1rem 1rem;
     }
 
 
