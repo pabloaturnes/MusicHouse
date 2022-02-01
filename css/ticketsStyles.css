@@ -301,4 +301,24 @@ color: #CC0C0C;
         height: 70vh;
     }
 
+
+/* TABLE STYLES*/
+
+.productos{
+
+    font-size: 0.7rem;
+    width: 90vw;
+    padding: 0 1rem;
+    border-spacing: 0.5rem;
+}
+
+
+
+.productos button{
+    padding: 0.4rem;
+    font-size: 0.6rem;
+}
+
+
+
 }
