@@ -423,6 +423,10 @@ input:focus{
         top: 30vh;
     }
 
+    .carrito table{
+        border-spacing: 0.5rem;
+    }
+
     .carrito-active{
         width: 100vw;
         height: 70vh;
