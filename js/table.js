@@ -172,7 +172,7 @@ export default function table(){
 
     
     // si no hay productos cargados el array carrito estara vacio, sino sera igual a lo cargado en localStorage
-    document.addEventListener("onload", ()=>{
+    window.addEventListener("onload", ()=>{
 
         if(localStorage.getItem("rockHouse" == null)){
             var carrito = [];
@@ -183,15 +183,12 @@ export default function table(){
             console.log("carrito viene con algo: ",carrito)
         }
     
-        mostrarTodos();
-        carritoNumber(carrito)
-        pintarCarrito(carrito)
-        //una vez que tengo todos los botones hago una lista con todos
-        
-
     })
 
-
+    mostrarTodos();
+    carritoNumber(carrito)
+    pintarCarrito(carrito)
+    //una vez que tengo todos los botones hago una lista con todos
     const $botonesAgregar = document.querySelectorAll(".agregar");
     
     function mostrarTodos(){
