@@ -172,7 +172,6 @@ export default function table(){
 
     
     // si no hay productos cargados el array carrito estara vacio, sino sera igual a lo cargado en localStorage
-    window.addEventListener("onload", ()=>{
 
         if(localStorage.getItem("rockHouse" == null)){
             var carrito = [];
@@ -182,8 +181,6 @@ export default function table(){
             carrito = JSON.parse(carrito);
             console.log("carrito viene con algo: ",carrito)
         }
-    
-    })
 
     mostrarTodos();
     carritoNumber(carrito)
