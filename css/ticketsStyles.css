@@ -241,6 +241,8 @@ color: #CC0C0C;
 
 .carrito-active{
     width: 30rem;
+    overflow: auto;
+    padding: 0 1rem 1rem 1rem;
 }
 
 
@@ -294,11 +296,17 @@ color: #CC0C0C;
 
     .carrito{
         top: 30vh;
+
+    }
+
+    .carrito table{
+        border-spacing: 0.5rem;
     }
 
     .carrito-active{
         width: 100vw;
         height: 70vh;
+        padding: 0 1rem 1rem 1rem;
     }
 
 
