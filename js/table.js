@@ -173,6 +173,8 @@ export default function table(){
     
     // si no hay productos cargados el array carrito estara vacio, sino sera igual a lo cargado en localStorage
 
+        localStorage.setItem("rockHouse")
+
         if(localStorage.getItem("rockHouse" == null)){
             var carrito = [];
             console.log("carrito esta vacio: ", carrito);
