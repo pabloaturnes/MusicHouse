@@ -172,21 +172,24 @@ export default function table(){
 
     
     // si no hay productos cargados el array carrito estara vacio, sino sera igual a lo cargado en localStorage
+    
 
-        if(localStorage.getItem("rockHouse" == null)){
-            var carrito = [];
-            console.log("carrito esta vacio: ", carrito);
-        }else{
-            var carrito = localStorage.getItem("rockHouse");
-            carrito = JSON.parse(carrito);
-            console.log("carrito viene con algo: ",carrito)
-        }
+    if(localStorage.getItem("rockHouse" == null)){
+        var carrito = [];
+        console.log("carrito esta vacio: ", carrito);
+    }else{
+        var carrito = localStorage.getItem("rockHouse");
+        carrito = JSON.parse(carrito);
+        console.log("carrito viene con algo: ",carrito)
+    }
 
     mostrarTodos();
     carritoNumber(carrito)
     pintarCarrito(carrito)
     //una vez que tengo todos los botones hago una lista con todos
     const $botonesAgregar = document.querySelectorAll(".agregar");
+
+
     
     function mostrarTodos(){
 
